@@ -1,24 +1,27 @@
-# OR — Financial Crime Portfolio
+# OR Financial Crime Portfolio
 
-Coleção de projetos independentes para demonstrar competências em antifraude, AML e investigação financeira.
+The OR portfolio contains independent, interoperable reference prototypes for AML, fraud operations, reconciliation, investigation, and control assurance.
 
-| Projeto | Foco |
+| Project | Responsibility |
 |---|---|
-| OR Trace | Rastreamento de fluxos financeiros |
-| OR AML Graph | Análise AML baseada em grafos |
-| OR MuleGraph | Detecção de contas-laranja |
-| OR SplitShield | Detecção de fracionamento |
-| OR CrossLedger | Reconciliação entre ledgers |
-| OR AML Simulator | Dados e cenários sintéticos |
-| OR Case Intelligence | Priorização de casos |
-| OR SAR Intelligence | Relatórios de operações suspeitas |
-| OR Regula | Requisitos, controles e evidências |
-| OR Financial Crime Intelligence Platform | Integração dos módulos OR |
+| OR Trace | Temporal multi-hop transaction lineage |
+| OR AML Graph | Cycles and network-pattern analysis |
+| OR MuleGraph | Explainable money-mule indicators |
+| OR SplitShield | Rolling-window structuring indicators |
+| OR CrossLedger | Conservative cross-ledger reconciliation |
+| OR AML Simulator | Reproducible synthetic scenarios |
+| OR Case Intelligence | Case priority and decision audit trail |
+| OR SAR Intelligence | Evidence-grounded report drafting |
+| OR Regula | Requirement, control, and evidence coverage |
+| OR Financial Crime Intelligence Platform | Replay-safe alert integration |
 
-## Princípios
+## Shared design principles
 
-- Usar somente dados públicos, anonimizados ou sintéticos.
-- Produzir indicadores explicáveis; score não é prova de crime.
-- Manter decisões, regras e alterações auditáveis.
-- Não incluir segredos ou dados pessoais reais nos repositórios.
+- Independent repositories with a common transaction vocabulary.
+- Decimal strings for money, explicit currency, time-zone-aware timestamps, and stable IDs.
+- Explainable indicators linked to evidence; no score is proof of wrongdoing.
+- Deterministic outputs, bounded workloads, strict validation, and replay safety.
+- Synthetic, public, anonymized, or properly governed data only.
+- Human review for investigative, regulatory, and customer-impacting decisions.
 
+These projects demonstrate engineering judgment. They do not claim production readiness, regulatory certification, or knowledge of any institution's private controls.

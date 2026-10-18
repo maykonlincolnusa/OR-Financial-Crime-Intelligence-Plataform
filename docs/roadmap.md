@@ -1,23 +1,30 @@
 # Roadmap
 
-Os projetos já possuem uma estrutura Python e um primeiro algoritmo testado. A evolução deve manter cada repositório independente.
+Each repository should remain independently useful while sharing versioned contracts.
 
-## Prioridade
+## Delivery order
 
-1. **OR MuleGraph:** API e dados sintéticos para detecção explicável de contas-laranja.
-2. **OR AML Simulator:** exportação CSV/JSON e cenários reproduzíveis.
-3. **OR SplitShield:** novas regras, API e processamento em streaming.
-4. **OR AML Graph:** fan-in/fan-out, comunidades e visualização.
-5. **OR Case Intelligence:** persistência, auditoria e interface de investigação.
+1. Stabilize common entity, account, transaction, alert, evidence, and case schemas.
+2. Use OR AML Simulator for reproducible contract and regression fixtures.
+3. Benchmark SplitShield, MuleGraph, and AML Graph on labelled synthetic scenarios.
+4. Connect OR Trace evidence to Case Intelligence without losing provenance.
+5. Add reviewed decisions as feedback, never as unqualified ground truth.
+6. Integrate SAR drafting and Regula control evidence behind explicit approvals.
+7. Demonstrate the full flow with an outbox/inbox event pattern and observability.
 
-CrossLedger, SAR Intelligence e Regula evoluem depois dos projetos principais. A Platform demonstra a integração por contratos versionados. OR Trace permanece independente.
+## Production gaps
 
-## Definição de pronto
+- Durable databases, migrations, encryption, key management, retention, and recovery.
+- Enterprise identity, RBAC/ABAC, segregation of duties, and tenant isolation.
+- Schema registry, signed releases, backward compatibility, and data lineage.
+- Streaming state, retries, dead-letter queues, idempotent consumers, and replay tools.
+- Model/rule governance, validation, drift monitoring, fairness review, and quality metrics.
+- Privacy impact assessment, security testing, operational runbooks, and regulatory review.
 
-- README com problema, execução e limitações.
-- Dados somente sintéticos.
-- Exemplo executável e testes relevantes.
-- API ou CLI documentada.
-- Captura de tela ou demonstração curta.
-- Nenhuma chave ou dado pessoal versionado.
+## Definition of a strong portfolio release
 
+- English documentation with clear problem, run instructions, assumptions, and limitations.
+- Executable example, meaningful tests, CI, and no secrets or personal data.
+- Evidence-linked output and explicit human-review boundaries.
+- Measured performance and detection quality using governed datasets.
+- Architecture diagram or short demo showing how the independent service integrates.

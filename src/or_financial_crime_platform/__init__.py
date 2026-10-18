@@ -1,15 +1,15 @@
-"""Starter package for OR Financial Crime Intelligence Platform."""
+"""Public API for OR Financial Crime Intelligence Platform."""
 
 from .orchestration import aggregate_module_results
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 
 def project_info() -> dict[str, str]:
     return {
         "name": "OR Financial Crime Intelligence Platform",
         "focus": "Integration of financial-crime intelligence modules",
-        "status": "starter",
+        "status": "reference-prototype",
     }
 
 
