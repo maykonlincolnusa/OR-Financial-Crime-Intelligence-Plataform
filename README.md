@@ -13,6 +13,7 @@ Financial institutions rarely replace every monitoring component at once. A modu
 - Ignore identical replays and reject conflicting replays.
 - Preserve source module and transaction evidence references.
 - Produce deterministic, versioned output for case triage.
+- Validate module versions, required participants, correlation fields, and evidence lineage.
 - Strict validation, CLI, optional authenticated API, Docker image, and CI.
 
 ## Run
@@ -33,4 +34,4 @@ See [portfolio](docs/portfolio.md) and [roadmap](docs/roadmap.md).
 
 ## Limitations and roadmap
 
-This prototype is not a workflow engine or production event bus. It has no durable storage, service discovery, schema registry, tenant isolation, distributed tracing, RBAC, retry queue, or end-to-end deployment. Next steps are signed JSON Schemas, correlation IDs, an outbox/inbox pattern, contract tests, OpenTelemetry, policy enforcement, and a reference integration using synthetic data.
+Set `action` to `validate` to inspect a multi-module delivery before aggregation. This prototype is not a workflow engine or production event bus. It has no durable storage, service discovery, schema registry, tenant isolation, distributed tracing, RBAC, retry queue, or end-to-end deployment. Next steps are signed JSON Schemas, an outbox/inbox pattern, OpenTelemetry, policy enforcement, and a reference integration using synthetic data.
